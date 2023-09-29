@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css home page buy.css">
+    <title>Document</title>
+</head>
+<style>
+    .light {
+        background: #fff;
+        color: #000;
+    }
+    
+    .dark {
+        background: grey;
+        color: #fff;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    section {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    nav {
+        width: 100%;
+        height: 20%;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    nav ul {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        list-style: none;
+        margin-left: 20px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transition: 0.5s all ease;
+        color: #000;
+    }
+    
+    nav ul li a:hover {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid #666699;
+    }
+    
+    .heading {
+        width: 800px;
+        height: 100%;
+    }
+    
+    .heading h1 {
+        font-size: 100px;
+        width: 100%;
+    }
+    
+    .heading p {
+        font-size: 30px;
+        color: #b7b7b7;
+        font-weight: bold;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .btn {
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 13px;
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+        background: #666699;
+        transition: all .55s ease;
+    }
+    
+    .btn:hover {
+        transform: scale(1.1);
+        transform: translateY(10px);
+    }
+    
+    .buy-and-sell {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        border: 2px solid #666699;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    #buy-section h3 {
+        padding-bottom: 20px;
+        text-transform: capitalize;
+    }
+    
+    #buy-section {
+        transition: all .55s ease;
+    }
+    
+    #buy-section button {
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 17px;
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+        background: #666699;
+        transition: all .55s ease;
+        margin: auto;
+    }
+    
+    @media only screen and (max-width: 700px) {
+        nav ul {
+            width: 100%;
+            height: 20%;
+            justify-content: center;
+            align-items: center;
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: center;
+            z-index: 2;
+        }
+        nav ul li {
+            list-style: none;
+            margin-left: 20px;
+            display: inline-flex;
+        }
+        nav ul li a {
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            transition: 0.5s all ease;
+            color: #000;
+        }
+        nav ul li a:hover {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px solid #666699;
+        }
+        .heading {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+        }
+        .heading h1 {
+            font-size: 50px;
+        }
+        .heading p {
+            font-size: 15px;
+            color: #b7b7b7;
+            font-weight: bold;
+        }
+        .buy-and-sell {
+            width: 100%;
+            height: 50%;
+            margin: auto;
+            border: 2px solid #666699;
+            overflow: hidden;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 20px;
+        }
+    }
+</style>
+
+<body>
+    <section>
+
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Other</a></li>
+            </ul>
+        </nav>
+        <div class="heading">
+            <h1>
+                Buy BTC in a few steps
+            </h1>
+            <p> Buy BTC and 99+ Crypto currencies with 99+ flat curencies </p>
+
+            <button class="btn" onclick="buyBtc()">Buy BTC</button>
+            <button class="btn" onclick="sellBtc()">Sell BTC</button>
+
+            <div class="buy-and-sell">
+                <div class="whole">
+                    <div id="buy-section">
+                        <h3>Here you can buy btc</h3>
+
+                        <button>tap here btc</button>
+                        <button>tap here btc</button>
+                        <button>tap here btc</button>
+                        <button>tap here btc</button>
+
+                    </div>
+
+
+                    <div id="sell-section">
+                        <h3>Here you can buy btc</h3>
+
+                        <button>tap here btc</button>
+                        <button>tap here btc</button>
+                        <button>tap here btc</button>
+                        <button>tap here btc</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="second">
+
+
+
+    </section>
+
+
+    <script>
+        function changeTheme(theme) {
+
+            document.body.className = "";
+            document.body.classlist.add(theme)
+        }
+
+        function buyBtc(tap1) {
+            tap1 = false;
+            var back = '';
+            if (tap1 == true) {
+                back = document.getElementById("buy-section").style.display = "block"
+            } else {
+                back = document.getElementById("buy-section").style.display = "none"
+            }
+            return back;
+
+        }
+
+        function sellBtc() {
+            tap2 = false;
+            var back = '';
+            if (tap2 == true) {
+                back = document.getElementById("sell-section").style.display = "block"
+            } else {
+                back = document.getElementById("sell-section").style.display = "none"
+            }
+            return back;
+
+        }
+    </script>
+</body>
+
+</html>
