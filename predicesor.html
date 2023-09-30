@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-transform: capitalize;
+    }
+    
+    body {
+        margin: 0%;
+        padding: 0%;
+        background: #000911;
+    }
+    
+    #sec1 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+    #sec1 h1 {
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-shadow: 5px 3px 30px rgba(37, 218, 13, 0.603);
+    }
+    
+    #sec1 p {
+        color: #fff;
+        text-align: justify;
+        font-size: 18px;
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        text-transform: lowercase;
+        padding-bottom: 15px;
+    }
+    
+    #sec1 img {
+        width: 40%;
+        height: 40%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border-radius: 50%;
+        border: 4px solid rgba(37, 218, 13, 0.603);
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    #sec1 .next {
+        text-align: center;
+        margin-top: 17px;
+    }
+    
+    #btnQuestion {
+        border: none;
+        margin-top: 25px;
+        padding: 17px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background: rgba(37, 218, 13, 0.603);
+        color: #fff;
+        font-weight: 600;
+        display: flex;
+        margin: auto;
+        font-size: 17px;
+        box-shadow: 5px 3px 30px rgba(37, 218, 13, 0.603);
+        transition: all .55s ease;
+    }
+    
+    #btnQuestion a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    #btnQuestion a:hover {
+        color: rgba(37, 218, 13, 0.603);
+    }
+    
+    #btnQuestion:hover {
+        transform: translateY(10px);
+        transform: scale(0.9);
+        background: #fff;
+        color: rgba(37, 218, 13, 0.603);
+        border: 2px solid rgba(37, 218, 13, 0.603);
+    }
+    
+    #sec2 {
+        width: 100%;
+        height: 100%;
+        padding-top: 30px;
+        position: relative;
+    }
+    
+    #sec2 h1 {
+        margin-top: 30px;
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+        padding-bottom: 15px;
+        padding-top: 18px;
+        color: #fff;
+        text-shadow: 5px 3px 30px rgba(37, 218, 13, 0.603);
+        margin: auto;
+    }
+    
+    #sec2 img {
+        width: 30%;
+        height: 30%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border-radius: 50%;
+        border: 4px solid rgba(37, 218, 13, 0.603);
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        float: right;
+    }
+    
+    #hobiesRow button {
+        display: block;
+        padding: 20px;
+        margin-top: 30px;
+        border: 3px solid rgba(37, 218, 13, 0.603);
+        background: none;
+        border-radius: 10px;
+        font-weight: 600;
+        color: #fff;
+        font-size: 17px;
+        transition: all .55s ease;
+    }
+    
+    #hobiesRow button:hover {
+        transform: translateX(10px);
+        background: rgba(37, 218, 13, 0.603);
+        box-shadow: 5px 3px 30px rgba(37, 218, 13, 0.603);
+    }
+    
+    #contactMe {
+        border: none;
+        margin-top: 25px;
+        padding: 17px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background: rgba(37, 218, 13, 0.603);
+        color: #fff;
+        font-weight: 600;
+        display: flex;
+        margin: auto;
+        font-size: 17px;
+        box-shadow: 5px 3px 30px rgba(37, 218, 13, 0.603);
+        transition: all .55s ease;
+        float: right;
+    }
+    
+    #contactMe:hover {
+        transform: translateY(-10px);
+        transform: scale(0.9);
+        background: #fff;
+        color: rgba(37, 218, 13, 0.603);
+        border: 2px solid rgba(37, 218, 13, 0.603);
+    }
+    
+    #seco {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding-top: 150px;
+    }
+    
+    #seco h1 {
+        margin-top: 30px;
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+        padding-bottom: 15px;
+        padding-top: 18px;
+        color: #fff;
+        text-shadow: 5px 3px 30px rgba(37, 218, 13, 0.603);
+        margin: auto;
+    }
+    
+    #calculateArea {
+        overflow: hidden;
+        width: 90%;
+        height: 100%;
+        border: 3px solid rgba(37, 218, 13, 0.603);
+        justify-content: center;
+        align-items: center;
+        display: block;
+        border-radius: 10px;
+    }
+    
+    #calculateArea p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        color: #fff;
+        font-size: 17px;
+    }
+    
+    #calculateArea input {
+        background: none;
+        width: 70%;
+        margin-bottom: 20px;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        color: #fff;
+        font-size: 15px;
+        border-bottom: 2px solid rgba(37, 218, 13, 0.603);
+    }
+    
+    #calculateArea button {
+        padding: 10px;
+        margin-top: 30px;
+        border: 3px solid rgba(37, 218, 13, 0.603);
+        background: none;
+        border-radius: 10px;
+        font-weight: 600;
+        color: #fff;
+        font-size: 17px;
+        transition: all .55s ease;
+        margin-left: 15px;
+        margin-bottom: -20px;
+    }
+    
+    #calculateArea button:hover {
+        transform: translateX(10px);
+        background: rgba(37, 218, 13, 0.603);
+        box-shadow: 5px 3px 30px rgba(37, 218, 13, 0.603);
+    }
+</style>
+
+<body>
+    <section id="sec1">
+        <h1>be my next predicesor</h1>
+        <p>Here if you blh bal blay Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi exercitationem nobis id. Delectus consequatur, iste tenetur nisi sapiente quas quam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt voluptas
+            molestias enim maiores consectetur distinctio tenetur quibusdam ea, numquam odio mollitia minus rerum architecto, impedit quas repudiandae ratione delectus, ducimus officia pariatur omnis nemo. Dolor voluptatum sit non minus! Eligendi?</p>
+        <img id="heroImg" src="https://img.freepik.com/free-vector/abstract-flat-design-background_23-2148450082.jpg?w=740&t=st=1695484250~exp=1695484850~hmac=763dce7dee61ebbba81f16c675804ee02f655206f006bc9d2214e6a0d3103dbc" alt="">
+        <p class="next">Be my next predocesor by answering the folowing questions</p>
+
+        <button id="btnQuestion"><a href="#seco">tap to get questions</a></button>
+    </section>
+
+
+    <section id="sec2">
+        <h1>My hobbies</h1>
+        <div id="hobiesRow">
+            <img id="heroImg" src="https://img.freepik.com/free-vector/abstract-flat-design-background_23-2148450082.jpg?w=740&t=st=1695484250~exp=1695484850~hmac=763dce7dee61ebbba81f16c675804ee02f655206f006bc9d2214e6a0d3103dbc" alt="">
+            <button>eating food haa</button>
+            <button>coding challenge</button>
+            <button>solving problems</button>
+
+        </div>
+        <button id="contactMe">contact me</button>
+        <p></p>
+    </section>
+
+
+    <section id="seco">
+        <h1>pass these simple questuins to be my predicesor.</h1>
+        <div id="calculateArea">
+            <p>10 + 9</p>
+            <input type="tel" placeholder="give your answer" id="question1">
+            <button id="changeBad1" onclick="submit1()">submit</button>
+            <p id="win/pass"></p>
+
+            <p>10 x 9</p>
+            <input type="tel" placeholder="give your answer" id="question2">
+            <button id="changeBad2" onclick="submit2()">submit</button>
+            <p id="win2/pass2"></p>
+
+            <p>10 x 8</p>
+            <input type="tel" placeholder="give your answer" id="question3">
+            <button id="changeBad3" onclick="submit3()">submit</button>
+            <p id="win3/pass3"></p>
+
+            <p>10 - 9</p>
+            <input type="tel" placeholder="give your answer" id="question4">
+            <button id="changeBad4" onclick="submit4()">submit</button>
+            <p id="win4/pass4"></p>
+
+
+
+        </div>
+    </section>
+
+    <script>
+        function submit1() {
+            var q1 = document.getElementById("question1").value;
+            var q1move = document.getElementById("win/pass");
+            if (q1 == 19) {
+                q1move.innerHTML = "correct move on"
+            } else {
+                q1move.innerHTML = "incorrect"
+                document.getElementById("changeBad1").style.backgroundColor = "red";
+
+            }
+        }
+
+        function submit2() {
+            var q2 = document.getElementById("question2").value;
+            var q2move = document.getElementById("win2/pass2");
+            if (q2 == 90) {
+                q2move.innerHTML = "correct move on"
+            } else {
+                q2move.innerHTML = "incorect"
+                document.getElementById("changeBad2").style.backgroundColor = "red";
+
+            }
+        }
+
+        function submit3() {
+            var q3 = document.getElementById("question3").value;
+            var q3move = document.getElementById("win3/pass3");
+            if (q3 == 80) {
+                q3move.innerHTML = "correct move on"
+            } else {
+                q3move.innerHTML = "incorect"
+                document.getElementById("changeBad3").style.backgroundColor = "red";
+
+            }
+        }
+
+        function submit4() {
+            var q4 = document.getElementById("question4").value;
+            var q4move = document.getElementById("win4/pass4");
+            if (q4 == 1) {
+                q4move.innerHTML = "correct move on"
+            } else {
+                q4move.innerHTML = "incorect"
+                document.getElementById("changeBad4").style.backgroundColor = "red";
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+
+</html>
